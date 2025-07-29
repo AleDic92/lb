@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LokalBuch</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #667eea; text-align: center; }
+        .search-box { background: white; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center; }
+        input, button { padding: 10px; margin: 5px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #667eea; color: white; cursor: pointer; }
+        .offer { background: white; margin: 10px 0; padding: 15px; border-radius: 10px; }
+        .discount { background: #ff6b6b; color: white; padding: 5px 10px; border-radius: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏪 LokalBuch</h1>
+        <p style="text-align: center;">Lokale Angebote - Direkt & Günstig</p>
+        
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Wonach suchst du?">
+            <button onclick="search()">🔍 Suchen</button>
+        </div>
+        
+        <div id="offers">
+            <div class="offer">
+                <h3>🍽️ Restaurant Angebot</h3>
+                <p>25€ statt 45€ - Gemütliches Familienrestaurant</p>
+                <span class="discount">44% SPAREN</span>
+                <button style="background: #28a745; margin-left: 10px;" onclick="alert('Gebucht!')">Jetzt buchen</button>
+            </div>
+            
+            <div class="offer">
+                <h3>💆 Wellness Angebot</h3>
+                <p>45€ statt 75€ - Entspannende Massage</p>
+                <span class="discount">40% SPAREN</span>
+                <button style="background: #28a745; margin-left: 10px;" onclick="alert('Gebucht!')">Jetzt buchen</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function search() {
+            alert('Suche gestartet für: ' + document.getElementById('search').value);
+        }
+    </script>
+</body>
+</html>
